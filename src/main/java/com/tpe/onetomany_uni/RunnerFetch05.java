@@ -29,7 +29,6 @@ public class RunnerFetch05 {
         List<Object>resultList2=session.createQuery(hql2).getResultList();
         resultList2.forEach(System.out::println);
 
-
         tx.commit();
         session.close();
         sf.close();
